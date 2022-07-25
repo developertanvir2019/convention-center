@@ -66,11 +66,18 @@
 
 .toast-class {
     margin-left: auto;
+    padding: 5px;
+    background-color: white;
+    font-weight: 700;
+    margin-right: 0;
+    border-left: 5px solid blue;
 }
 
 .toast-class i {
-    color: blue;
+    color: rgb(32, 155, 168);
     font-size: 20px;
+    margin-left: 5px;
+
 }
 
 .acordian-info {
@@ -90,8 +97,11 @@ footer {
 
 /* responsive for mobile */
 @media screen and (max-width: 480px) {
-    .banner-mobile img {
+
+    .carousel-item img {
+        width: 100%;
         height: 100vh;
+        object-fit: cover;
     }
 
     .banner-mobile h1 {
@@ -101,12 +111,17 @@ footer {
     .celebrate {
         flex-direction: column-reverse;
         width: 100% !important;
+
     }
 
     .qustion {
         flex-direction: column-reverse;
         width: 100% !important;
     }
-}
 
+    footer {
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
 }
